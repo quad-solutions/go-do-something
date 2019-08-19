@@ -1,10 +1,12 @@
 {
-  "name": "tell-me-what-to-do",
-  "version": "0.1.0",
-  "private": false,
+  "name": "go-do-something",
+  "version": "1.0.0",
+  "homepage": "https://go-do-something.com",
+  "private": true,
   "dependencies": {
     "@material-ui/core": "^4.3.1",
     "@material-ui/icons": "^4.2.1",
+    "gh-pages": "^2.1.1",
     "i18next": "^17.0.8",
     "i18next-browser-languagedetector": "^3.0.2",
     "react": "^16.8.6",
@@ -17,7 +19,9 @@
     "start": "react-scripts start --host 0.0.0.0",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
