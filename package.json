@@ -1,14 +1,20 @@
 {
   "name": "tell-me-what-to-do",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
+    "i18next": "^17.0.8",
+    "i18next-browser-languagedetector": "^3.0.2",
     "react": "^16.8.6",
+    "react-cookie-consent": "^2.4.0",
     "react-dom": "^16.8.6",
+    "react-i18next": "^10.11.5",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --host 0.0.0.0",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
