@@ -374,7 +374,7 @@ function App() {
                   <Button onClick={() => setPrivacyOpen(true)}>{t('privacy-policy')}</Button>
                <Divider/>
                <br/>
-                  a <a href={'https://quad.solutions'}>Quad Solutions</a> app
+                  a <a href={'https://github.com/quad-solutions'}>Quad Solutions</a> app
                </div>
             </div>
          </SwipeableDrawer>
