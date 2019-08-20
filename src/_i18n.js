@@ -192,7 +192,7 @@ const resources = {
       /**
        * Snackbar texts
        */
-      'accept-privacy-for-search': "Du musst unsere Datenschutzbestimmung aktzeptieren, damit du nach Orten suchen kannst.",
+      'accept-privacy-for-search': "Du musst unsere Datenschutzerklärung aktzeptieren, damit du nach Orten suchen kannst.",
       'no-location-not-found': 'Wir konnten dich leider nicht orten.',
       'no-place-found': "Es tut uns Leid, wir konnten keinen Ort für dich finden. Vielleicht Zuhause?",
       'no-location-data': 'Bitte erlaube dieser App auf deinen Standort zuzugreifen, damit wir dir Orte für Aktivitäten vorschlagen können.',

@@ -254,46 +254,7 @@ function App() {
                </Typography>
             </Toolbar>
          </AppBar>
-         <SwipeableDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} onOpen={() => setDrawerOpen(true)}>
-            <div style={{display: 'inline-grid', margin: '5%', width: '70vw'}}>
-               <Typography variant="h5" component="h2" gutterBottom >{t('group-settings')}</Typography>
 
-
-               {actionTypes.map((at, index) => {
-                  return(
-                     <FormControlLabel
-                     key={`${at}-${index}`}
-                     control={
-                        <Checkbox checked={selectedActionTypes[at]} onChange={handleActionTypeChange(at)} value={`checked${at}`} />
-                     }
-                     label={t(at)}
-                     />
-                  )
-               })}
-               <br/>
-               <Typography variant="h5" component="h2" gutterBottom >{t('activity-type')}</Typography>
-
-               {actionTags.map((at, index) => {
-                  return(
-                     <FormControlLabel
-                     key={`${at}-${index}`}
-                     control={
-                        <Checkbox checked={selectedActionTags[at]} onChange={handleActionTagChange(at)} value={`checked${at}`} />
-                     }
-                     label={t(at)}
-                     />
-                  )
-               })}
-
-               <Divider/>
-               <div style={{textAlign: 'left' }}>
-                  <Button onClick={() => setPrivacyOpen(true)}>{t('privacy-policy')}</Button>
-               <Divider/>
-               <br/>
-                  a <a href={'https://quad.solutions'}>Quad Solutions</a> app
-               </div>
-            </div>
-         </SwipeableDrawer>
 
          <SwipeableDrawer open={privacyOpen} onClose={() => setPrivacyOpen(false)} onOpen={() => setPrivacyOpen(true)}>
             <div style={{display: 'inline-grid', margin: '0%', padding: '5%', width: '70vw', overflowY: 'auto'}}>
@@ -376,6 +337,48 @@ function App() {
 
             </div>
          </SwipeableDrawer>
+
+         <SwipeableDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} onOpen={() => setDrawerOpen(true)}>
+            <div style={{display: 'inline-grid', margin: '5%', width: '70vw'}}>
+               <Typography variant="h5" component="h2" gutterBottom >{t('group-settings')}</Typography>
+
+
+               {actionTypes.map((at, index) => {
+                  return(
+                     <FormControlLabel
+                     key={`${at}-${index}`}
+                     control={
+                        <Checkbox checked={selectedActionTypes[at]} onChange={handleActionTypeChange(at)} value={`checked${at}`} />
+                     }
+                     label={t(at)}
+                     />
+                  )
+               })}
+               <br/>
+               <Typography variant="h5" component="h2" gutterBottom >{t('activity-type')}</Typography>
+
+               {actionTags.map((at, index) => {
+                  return(
+                     <FormControlLabel
+                     key={`${at}-${index}`}
+                     control={
+                        <Checkbox checked={selectedActionTags[at]} onChange={handleActionTagChange(at)} value={`checked${at}`} />
+                     }
+                     label={t(at)}
+                     />
+                  )
+               })}
+
+               <Divider/>
+               <div style={{textAlign: 'left' }}>
+                  <Button onClick={() => setPrivacyOpen(true)}>{t('privacy-policy')}</Button>
+               <Divider/>
+               <br/>
+                  a <a href={'https://quad.solutions'}>Quad Solutions</a> app
+               </div>
+            </div>
+         </SwipeableDrawer>
+
 
 
          <Typography variant="h2" component="h2" gutterBottom style={{ paddingTop: "20vh" }}>
