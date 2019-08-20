@@ -91,7 +91,7 @@ export default [
     },
     {
        name: 'bike tour',
-       type: ['friends', 'single', 'couple', 'date'],
+       type: ['friends', 'single', 'couple', 'group', 'date'],
        tags: ['outdoor', 'sport']
     },
     {
@@ -113,5 +113,105 @@ export default [
        name: 'barbeque',
        type: ['friends', 'group', 'meet'],
        tags: ['outdoor', 'eat', 'drinks']
+    },
+    {
+       name: 'kayaking',
+       type: ['friends', 'single', 'couple', 'date'],
+       tags: ['outdoor', 'sport']
+    },
+    {
+       name: 'snow boarding',
+       type: ['friends', 'group', 'meet'],
+       tags: ['outdoor', 'indoor', 'sport']
+    },
+    {
+       name: 'movie marathon',
+       type: ['friends', 'single', 'couple', 'group', 'date'],
+       tags: ['indoor', 'entertainment']
+    },
+    {
+       name: 'museum',
+       type: ['friends', 'single', 'couple'],
+       tags: ['indoor']
+    },
+    {
+       name: 'photoshoot',
+       type: ['friends', 'single', 'couple',],
+       tags: ['outdoor']
+    },
+    {
+       name: 'brunch',
+       type: ['friends', 'couple', 'date'],
+       tags: ['indoor', 'eat', 'drinks']
+    },
+    {
+       name: 'baking',
+       type: ['friends', 'single', 'couple', 'date'],
+       tags: ['indoor', 'eat']
+    },
+    {
+       name: 'fucking all day',
+       type: ['couple'],
+       tags: ['indoor', 'sport']
+    },
+    {
+       name: 'beach',
+       type: ['friends', 'single', 'couple', 'group', 'date', 'meet'],
+       tags: ['outdoor']
+    },
+    {
+       name: 'pizza',
+       type: ['friends', 'single', 'couple', 'group', 'date', 'meet'],
+       tags: ['outdoor', 'indoor', 'eat',]
+    },
+    {
+       name: 'go carting',
+       type: ['friends', 'couple', 'group', 'date', 'meet'],
+       tags: ['outdoor', 'indoor', 'sport']
+    },
+    {
+       name: 'zoo',
+       type: ['friends', 'single', 'couple', 'group', 'date'],
+       tags: ['outdoor']
+    },
+    {
+       name: 'making memes',
+       type: ['friends', 'single'],
+       tags: ['indoor', 'drinks']
+    },
+    {
+       name: 'listen to music together',
+       type: ['friends', 'couple',],
+       tags: ['indoor']
+    },
+    {
+       name: 'bowling',
+       type: ['friends', 'couple', 'group', 'date'],
+       tags: ['indoor', 'sport', 'drinks']
+    },
+    {
+       name: 'cat cafe',
+       type: ['friends', 'couple', 'group', 'date'],
+       tags: ['indoor']
+    },
+    {
+       name: 'netflix and chill',
+       type: ['date'],
+       tags: ['indoor', 'drinks', 'sport']
+    },
+    {
+       name: 'coffee',
+       type: ['friends', 'single', 'couple', 'group', 'date', 'meet'],
+       tags: ['indoor']
+    },
+    {
+       name: 'shopping',
+       type: ['friends', 'single', 'couple', 'date'],
+       tags: ['indoor']
+    },
+    {
+       name: 'fancy restaurant',
+       type: ['friends', 'single', 'couple'],
+       tags: ['indoor', 'eat', 'drinks']
     },
  ]

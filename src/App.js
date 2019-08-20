@@ -130,7 +130,7 @@ function App() {
             noLocationData()
          }
       }else{
-         openSnackbar("You must accept our privacy policy to search for places to do stuff.")
+         openSnackbar(t('accept-privacy-for-search'))
       }
    }
 
@@ -154,7 +154,7 @@ function App() {
             query: action.name
          }, callback)
       } else {
-         openSnackbar("We were not able to find your location.")
+         openSnackbar(t('location-not-found'))
       }
    }
 
@@ -162,12 +162,12 @@ function App() {
       if (status === window.google.maps.places.PlacesServiceStatus.OK) {
          setPlacesData(results)
       }else{
-         openSnackbar("Sorry, we didn't find any place where you can do this. Maybe at home?")
+         openSnackbar(t('no-place-found'))
       }
    }
 
    function noLocationData() {
-      openSnackbar("To show possible places to do this activity, please allow this app to get your location.")
+      openSnackbar(t('no-location-data'))
    }
 
    const [snackbarState, setSnackbarState] = useState({
@@ -286,11 +286,8 @@ function App() {
                })}
 
                <Divider/>
-               <div style={{textAlign: 'left'}}>
-                  <Button>Terms of Service</Button>
-                  <br/>
-                  <Button>Privacy Policy</Button>
-                  <br/>
+               <div style={{textAlign: 'left' }}>
+                  <Button onClick={() => setPrivacyOpen(true)}>{t('privacy-policy')}</Button>
                <Divider/>
                <br/>
                   a <a href={'https://quad.solutions'}>Quad Solutions</a> app
@@ -300,23 +297,23 @@ function App() {
 
          <SwipeableDrawer open={privacyOpen} onClose={() => setPrivacyOpen(false)} onOpen={() => setPrivacyOpen(true)}>
             <div style={{display: 'inline-grid', margin: '0%', padding: '5%', width: '70vw', overflowY: 'auto'}}>
-               <Typography variant="h5" component="h2" gutterBottom >Privacy Policy</Typography>
+               <Typography variant="h5" component="h2" gutterBottom >{t('privacy-policy')}</Typography>
 
                <Typography variant="body2" component="p" gutterBottom >
-                  Personal data (usually referred to just as "data" below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.
+                  {t('pp-pt1')}
                </Typography>
                <Typography variant="body2" component="p" gutterBottom >
-               Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as the "GDPR"), "processing" refers to any operation or set of operations such as collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission, dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction performed on personal data, whether by automated means or not.
+                  {t('pp-pt2')}
                </Typography>
                <Typography variant="body2" component="p" gutterBottom >
-               The following privacy policy is intended to inform you in particular about the type, scope, purpose, duration, and legal basis for the processing of such data either under our own control or in conjunction with others. We also inform you below about the third-party components we use to optimize our website and improve the user experience which may result in said third parties also processing data they collect and control.
+                  {t('pp-pt3')}
                </Typography>
 
-               <Typography variant="h6" component="h2" gutterBottom >Information about us</Typography>
+               <Typography variant="h6" component="h2" gutterBottom >{t('pp-pt4')}</Typography>
                <Typography variant="body2" component="p" gutterBottom >
-                  This is only a fun little project we are working on right now and is not commercial in any way. 
+                  {t('pp-pt5')}
                   <br/>
-                  If you want to write us a message, you can generally contact us via <b id="email"/>.
+                  {t('pp-pt6')}<b id="email"/>.
                </Typography>
 
 
@@ -418,10 +415,10 @@ function App() {
          <CookieConsent
             style={{backgroundColor: deepPurple[900]}}
          >
-            This website uses cookies and third party services to function properly.
+            {t('pp-consent-1')}
             <br/>
-            For more information, see our 
-            <Button size="small" color='primary' onClick={() => setPrivacyOpen(true)}>Privacy Policy</Button>.
+            {t('pp-consent-2')}
+            <Button size="small" color='primary' onClick={() => setPrivacyOpen(true)}>{t('privacy-policy')}</Button>.
          </CookieConsent>
 
       </div>
