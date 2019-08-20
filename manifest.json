@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Go Do Something",
+  "name": "Go Do Something - A Random Idea Generator For Your Free Time",
   "icons": [
     {
       "src": "favicon.ico",
