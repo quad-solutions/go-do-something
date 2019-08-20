@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-import './i18n';
+import './_i18n';
 
 import poweredByGoogle from './powered_by_google_on_non_white.png'
 
@@ -22,7 +22,6 @@ import amber from '@material-ui/core/colors/amber'
 import orange from '@material-ui/core/colors/orange'
 import deepOrange from '@material-ui/core/colors/deepOrange'
 import brown from '@material-ui/core/colors/brown'
-import grey from '@material-ui/core/colors/grey'
 
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button'
@@ -241,7 +240,6 @@ function App() {
    }
 
    const [drawerOpen, setDrawerOpen] = useState(false)
-   const [tosOpen, setTosOpen] = useState(false)
    const [privacyOpen, setPrivacyOpen] = useState(false)
 
    return (
@@ -252,7 +250,7 @@ function App() {
                   <MenuItem fontSize="large" style={{color: 'white'}} />
                </IconButton>
                <Typography variant="h5" component="h2">
-                  <b>Things To Do</b>
+                  <b>Go Do Something</b>
                </Typography>
             </Toolbar>
          </AppBar>
@@ -378,7 +376,7 @@ function App() {
                   <br/>
                   For more information, please see <a href="https://help.github.com/en/articles/github-privacy-statement">https://help.github.com/en/articles/github-privacy-statement</a>
                </Typography>      
-               
+
             </div>
          </SwipeableDrawer>
 
